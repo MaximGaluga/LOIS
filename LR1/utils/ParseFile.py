@@ -15,7 +15,7 @@ class ParseFile:
                 ParseFile.__check_number_tuples(txt):
             return ParseFile.__get_tuples()
         else:
-            print("Write the correct set, example: A = {(x1, 0.0),(x2, 0.1), (x3, 0.3), (x4, 1.0)}")
+            raise Exception("Write the correct set, example: A = {(x1, 0.0), (x2, 0.1), (x3, 0.3), (x4, 1.0)}")
 
     @staticmethod
     def __open_file(url: str) -> str:

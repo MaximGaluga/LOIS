@@ -1,5 +1,6 @@
 from utils.ParseFile import ParseFile
 
-
-parsed_data = ParseFile.parse_file('./JS/input.txt')
-print(parsed_data["third_set"])
+try:
+    parsed_data = ParseFile.parse_file('./input.txt')
+except Exception as ex:
+    print(ex)
